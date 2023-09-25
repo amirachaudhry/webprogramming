@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <script>
+    function displayLarger(castleImage)
+    {castleImage.style.width='170px';castleImage.style.height='170px';}
+    function displaySmaller(castleImage)
+    {castleImage.style.width='140px';castleImage.style.height='140px';}
+ </script>
+    
 <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-<title>Software Engineering</title>
+<title>Edinburgh</title>
 </head>
 
-<!-- parent of site  --> 
 <body>
     <header>
 <h1> Edinburgh</h1>
@@ -22,7 +28,9 @@
             gardens and neoclassical buildings </p>
         <p>Looming over the whole of edinburgh is Edinburgh Castle
            one of the main tourism attractions</p>
-        <img src="images/castle2.jpg" height="120" width="160">
+        <img id = "castleImage"src="../images/castle2.jpg" height="120" width="160" 
+        onmouseover="displayLarger(this)"
+        onmouseout="displaySmaller(this)">
     </section>
 </div>
 
