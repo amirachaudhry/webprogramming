@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#clickMe").click(function() {
+        // Show the image when the <p> element is clicked
+            $("#clyde").show(); 
+          });
+        });
+        </script>
+
+
 <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 <title>WebPage</title>
 </head>
@@ -12,7 +23,8 @@
         western Lowlands. It's famed for its Victorian and art 
         nouveau architecture, a rich legacy of the city's 
         18th–20th-century prosperity due to trade and shipbuilding. </p>
-    <p>Click me to see a picture of the River Clyde</p>
+    <p id="clickMe">Click me</p>
+    <img id="clyde" src="../images/clyde.jpg" style="display: none;">
     </header>
 
 
