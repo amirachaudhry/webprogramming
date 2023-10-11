@@ -3,6 +3,7 @@ body {
     background-color:rgb(145, 191, 226)
 }
 
+
 .button-container {
     list-style: none;
     padding: 0;
@@ -10,24 +11,29 @@ body {
 
 .button-container li {
     display: inline-block;
-    margin: 5px;
+    margin: 10px; 
 }
 
 .button-container li a {
     display: inline-block;
-    padding: 10px 20px; 
-    background-color: #007bff; 
-    color: #fff; 
+    padding: 60px 55px; 
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px; 
+    border-radius: 10px; 
+    background-size: cover; 
 }
+
 
 .button-container li a:hover {
-    background-color: #b382db; 
+    background-color:rgb(18, 53, 74);
 }
+.section1 {
+    background-color: #f8f8f8;
 
+}
 footer {
-    background-color: #e4e5e4;
+    background-color: #f8f8f8;
             color: #000000;
             text-align: center;
             padding: 10px 0;
@@ -35,7 +41,7 @@ footer {
 }
 
 header {
-    background-color: #e7f3e5;
+    background-color: #fbfbfb;
 }
 
 
