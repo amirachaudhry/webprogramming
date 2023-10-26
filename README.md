@@ -2,7 +2,7 @@
 F28WP
 
 
-This project welcomes the user to Scotland with infomation of each of the following cities:
+This project allows users to read about the follow places in Scotland:
 - Edinburgh
 - Glasgow
 - Aberdeen
