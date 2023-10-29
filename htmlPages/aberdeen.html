@@ -7,12 +7,24 @@
 
     <script>
         $(document).ready(function() {
-            // jQuery code to change the text color when the <h2> element is clicked
+            // Change the text color when the <h2> element is clicked
             $("h2").click(function() {
                 $(this).css("color", "red"); // Change the text color to red
             });
+    
+            // Toggle the image source when it's clicked
+            $("#aberdeenCity").click(function() {
+                if ($(this).attr("src") === "../images/aberdeen.jpg") {
+                    $(this).attr("src", "../images/aberdeenMap.jpg"); // Change the image source
+                } else {
+                    $(this).attr("src", "../images/aberdeen.jpg"); // Change it back to the original source
+                }
+            });
         });
     </script>
+    
+
+
 </head>
 <body>
     <header>
@@ -26,7 +38,7 @@
             international population. It's also known as the ‘Granite City’ for its many enduring grey-stone buildings.
              The 19th-century Marischal College is typical – a monumental Victorian landmark that’s now headquarters of the 
              City Council</p>
-        <img id="map" src="../images/aberdeenMap.jpg" height="120" width="160">
+        <img id="aberdeenCity" src="../images/aberdeen.jpg" height="190" width="200">
     </main>
 
     <footer>
