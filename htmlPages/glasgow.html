@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-<link rel="stylesheet" type="text/css" href="../CSS/style.css">
-<title> Scottish Cities </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <title>Scottish Cities</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-          $("#clickMe").click(function() {
-        // Show the image when the <p> element is clicked
-            $("#clyde").show(); 
-          });
+<script>
+    $(document).ready(function() {
+        $("#clickMe").click(function() {
+            // Show the image when the <p> element is clicked
+            $("#clyde").show();
         });
-        </script>
 
- <header>
+        $("#showBuilding").click(function() {
+            // Show the Harry Potter image with a fade-in effect
+            $("#harryPotter").fadeIn();
+        });
+    });
+</script>
+
+<header>
     <h1>Welcome to Glasgow</h1>
-    </header>
-
-
+</header>
 
 <main>
-   
     <section class="section1">
-        <p>Glasgow is a port city on the River Clyde in Scotland's 
-            western Lowlands. It's famed for its Victorian and art 
-            nouveau architecture, a rich legacy of the city's 
-            18th 20th-century prosperity due to trade and shipbuilding. </p>
+        <p>Glasgow is a port city on the River Clyde in Scotland's western Lowlands. It's famed for its Victorian and art nouveau architecture, a rich legacy of the city's 18th-20th-century prosperity due to trade and shipbuilding.</p>
         <p id="clickMe">Click me</p>
-        <h2>University of Glasgow </h2>
-        <img src="../images/university.jpg" >
+        <h2>University of Glasgow</h2>
+        <img src="../images/university.jpg">
         <img id="clyde" src="../images/clyde.jpg" style="display: none;">
-        <p>The University of Glasgow is located in the west end of Glasgow
-            which offers 48 different courses.
-        </p>
-           </section>
+        <p>The University of Glasgow is located in the west end of Glasgow, which offers 48 different courses.</p>
+        <p>University of Glasgow is one of the top 100 universities in the world and is known for its historic buildings, which are said to have inspired the Harry Potter school, Hogwarts.</p>
+        <button id="showBuilding">Click for some Harry Potter magic:</button>
+    </section>
 
-
-
-
+    <div id="harryPotter" style="display: none;">
+        <img src="../images/harryPotter.jpg">
+    </div>
 </main>
 
 <footer>
