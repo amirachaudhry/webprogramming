@@ -33,16 +33,17 @@ body {
 
 }
 footer {
-    background-color: #f8f8f8;
             color: #000000;
             text-align: center;
             padding: 10px 0;
         
 }
 
-header {
+header, footer {
     background-color: #fbfbfb;
 }
 
 
-
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
