@@ -57,3 +57,12 @@ main {
     display: block;
     margin: 0 auto;
 }
+
+#showBuilding {
+    background-color: #007bff;
+}
+
+.button-container li a:hover {
+    background-color: rgb(18, 53, 74);
+    transform: scale(1.3);
+}
