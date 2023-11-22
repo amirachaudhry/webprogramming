@@ -56,7 +56,10 @@ main {
     display: block;
     margin: 0 auto;
 }
+#flag:hover {
+    opacity: 0.8;
 
+}
 #showBuilding {
     background-color: #007bff;
 }
