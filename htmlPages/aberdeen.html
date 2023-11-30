@@ -7,26 +7,22 @@
 
     <script>
         $(document).ready(function() {
-            // Toggle the image source when it's clicked
-            $("#aberdeenCity").click(function() {
-                if ($(this).attr("src") === "../images/aberdeen.jpg") {
-                    $(this).attr("src", "../images/aberdeenMap.jpg"); // Change the image source
+            // Toggle the image source when the text is clicked
+            $("#mapText").click(function() {
+                var aberdeenImage = $("#aberdeenCity");
+
+                if (aberdeenImage.attr("src") === "../images/aberdeen.jpg") {
+                    aberdeenImage.attr("src", "../images/aberdeenMap.jpg"); // Change the image source
                 } else {
-                    $(this).attr("src", "../images/aberdeen.jpg"); // Change it back to the original source
+                    aberdeenImage.attr("src", "../images/aberdeen.jpg"); // Change it back to the original source
                 }
             });
         });
     </script>
-    
-    
-
-
 </head>
 <body>
     <header>
-
         <h2>Welcome to Aberdeen</h2>
-
     </header>
 
     <main>
@@ -36,7 +32,7 @@
             international population. It's also known as the ‘Granite City’ for its many enduring grey-stone buildings.
              The 19th-century Marischal College is typical – a monumental Victorian landmark that’s now headquarters of the 
              City Council</p>
-        <h4> Click the image below to see where aberdeen is on the map </h4>
+        <h4 id="mapText"> Click the text here to see where Aberdeen is on the map </h4>
         <img id="aberdeenCity" src="../images/aberdeen.jpg" height="190" width="200">
 
         <h2>What is Aberdeen Most Famous For?</h2>
@@ -50,8 +46,5 @@
     <footer>
         <a href="home.html">Home</a>
     </footer>
-
-
-   
 </body>
 </html>
