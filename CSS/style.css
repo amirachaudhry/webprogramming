@@ -5,10 +5,26 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     background-color: #007bff;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+}
+
+#flag-left,
+#flag-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#flag-left {
+    left: 10px;
+}
+
+#flag-right {
+    right: 10px;
 }
 
 .button-container {
@@ -36,15 +52,9 @@ header, footer {
     background-color: rgb(18, 53, 74);
 }
 
-h1 {
-    font-family: "Arial", Helvetica, sans-serif;
-    text-align: center;
-    margin: 20px;
-}
-
+h1,
 h2 {
     font-family: "Arial", Helvetica, sans-serif;
-    text-align: center;
     margin: 20px;
 }
 
@@ -56,10 +66,11 @@ main {
     display: block;
     margin: 0 auto;
 }
+
 #flag:hover {
     opacity: 0.8;
-
 }
+
 #showBuilding {
     background-color: #007bff;
 }
@@ -78,6 +89,6 @@ main {
 }
 
 footer {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
 }
