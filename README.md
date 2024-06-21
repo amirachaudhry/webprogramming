@@ -8,7 +8,7 @@ This project allows users to read about the follow places in Scotland:
 - Aberdeen
 
 
-When you click on one of the three pages you are view images and infomation about that 
+When you click on one of the three pages you are view images and information about that 
 selected place , including images.
 
 
